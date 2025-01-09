@@ -10,9 +10,22 @@ html{
     overflow-x: hidden;
 }
 
+/* #filler{
+    height: 120px;
+    width: 100%;
+} */
+
 
 
 /*Header Styling*/
+
+#header{
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .header-nav-link {
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out!important; /* Set transition duration to 1 second */
 }
@@ -38,7 +51,7 @@ html{
 main{
     height: 100%;
     width: 100%;
-    margin-top: -10px;
+    margin-top: 120px;
     background: linear-gradient(180deg, #272727, #272727d8, #27272748)!important;
     display: flex;
     flex-direction: column;
@@ -100,6 +113,7 @@ main{
 @media(max-width: 992px){
     .home-component{
         width: 80%;
+        margin-top: 150px;
     }
 }
 
@@ -109,7 +123,11 @@ main{
     }
 
     #home-card-image{
-        display: none;
+        display: none!important;
+    }
+
+    #LogoImage{
+        height: 80px;
     }
 
 }
