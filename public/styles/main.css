@@ -94,6 +94,9 @@ main{
     transform: rotateZ(180deg);
 }
 
+.project-card-links{
+    text-decoration: none;
+}
 
 
 
