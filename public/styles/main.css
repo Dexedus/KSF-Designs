@@ -52,7 +52,7 @@ main{
     height: 100%;
     width: 100%;
     margin-top: 120px;
-    background: linear-gradient(180deg, #272727, #272727d8, #27272748)!important;
+    background: linear-gradient(180deg, #272727, #272727ee, #272727d2, #272727a4, #27272748)!important;
     display: flex;
     flex-direction: column;
     align-items: center;
