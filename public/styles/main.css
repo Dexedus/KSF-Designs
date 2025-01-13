@@ -46,21 +46,19 @@ html{
 }
 
 .header-nav-link {
-    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out, text-decoration 0.2s ease-in-out; /* Set transition duration to 1 second */
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out!important; /* Set transition duration to 1 second */
     text-decoration-color: #215217;
 }
 
 .header-nav-link:hover {
     transform: translateY(-10px);  /* Move up on hover */
     color: #494748!important; /* Change color on hover */
-    text-decoration: underline;
 }
 
 /* When the hover ends, the element returns to its original position */
 .header-nav-link:not(:hover) {
     transform: translateY(0); /* Move back to original position */
     color: white; /* Return to original color */
-    text-decoration: none;
 }
 
 
@@ -206,6 +204,229 @@ These were for background icons. Not sure if I wanna use these
 
 
 
+
+
+/*Animations added to hero text*/
+#I-work{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 0.6s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#primarily{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 0.8s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#with-small{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 1s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#businesses{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 1.2s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#to-help{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 1.4s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#them-grow{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 1.6s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#their-leads{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 1.8s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#and-build{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 2s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#a-strong{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 2.2s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#online{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 2.4s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#presence{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 2.6s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#which-has{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 2.8s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#become{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 3s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#a-crucial{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 3.2s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#aspect{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 3.4s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#of-success{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 3.6s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#in-todays{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 3.8s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+#digital-driven{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 4s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#market{
+    opacity: 0%;
+    animation: heroText 1s ease-in-out 4.2s forwards;
+    transform: scale(0);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+/*Obersvable element opacity*/
+#observedImageRight{
+    opacity: 0%;
+}
+
+#observedTextLeft{
+    opacity: 0%;
+}
+
+#observedImageLeft{
+    opacity: 0%;
+}
+
+#observedTextRight{
+    opacity: 0%;
+}
+
+#observedFeature1{
+    opacity: 0%;
+    transform: translateY(100px);
+}
+
+#observedFeature2{
+    opacity: 0%;
+    transform: translateY(100px);
+}
+
+#observedFeature3{
+    opacity: 0%;
+    transform: translateY(100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Classes to be added to observed elements*/
+.fadeFromRight1{
+    transform: translateX(500px);
+    animation: fadeFromRight 1.2s ease-in-out forwards;
+}
+
+.fadeFromLeft1{
+    transform: translateX(-500px);
+    animation: fadeFromLeft 1.2s ease-in-out .5s forwards;
+}
+
+.fadeFromRight2{
+    transform: translateX(500px);
+    animation: fadeFromRight 1.2s ease-in-out .5s forwards;
+}
+
+.fadeFromLeft2{
+    transform: translateX(-500px);
+    animation: fadeFromLeft 1.2s ease-in-out forwards;
+}
+
+.fadeFromBottom1{
+    animation: fadeFromBottom 1s ease-in-out forwards;
+}
+
+.fadeFromBottom2{
+    animation: fadeFromBottom 1s ease-in-out 0.5s forwards;
+}
+
+.fadeFromBottom3{
+    animation: fadeFromBottom 1s ease-in-out 1s forwards;
+}
+
+
+
 @media(max-width: 992px){
     .home-component{
         width: 80%;
@@ -231,5 +452,55 @@ These were for background icons. Not sure if I wanna use these
 @media (max-width: 576px){
     #LogoImage{
         height: 60px;
+    }
+}
+
+
+/*Animations*/
+@keyframes fadeFromRight{
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeFromLeft{
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeFromBottom{
+    0%{
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes heroText{
+    0% {
+        transform: scale(0);
+        opacity: 0%;
+    }
+    75% {
+        transform: scale(1.1);
+        opacity: 75%;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 100%;
     }
 }
