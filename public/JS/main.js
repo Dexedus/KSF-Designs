@@ -20,6 +20,12 @@ const handleIntersection = (entries, observer) => {
           entry.target.classList.add('fadeFromBottom2');
         }else if (id === 'observedFeature3') {
           entry.target.classList.add('fadeFromBottom3');
+        }else if (id === 'aboutMeP1') {
+          entry.target.classList.add('fadeFromBottom1');
+        }else if (id === 'aboutMeP2') {
+          entry.target.classList.add('fadeFromBottom2');
+        }else if (id === 'aboutMeP3') {
+          entry.target.classList.add('fadeFromBottom3');
         }else if (id === 'element3') {
           entry.target.classList.add('in-view-3');
         }
@@ -33,7 +39,7 @@ const handleIntersection = (entries, observer) => {
   
   // Create the IntersectionObserver instance
   const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0.5, // You can adjust the threshold as needed
+    threshold: 0.3, // You can adjust the threshold as needed
   });
   
   // Select all the elements you want to observe

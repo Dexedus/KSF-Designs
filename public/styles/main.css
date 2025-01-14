@@ -204,6 +204,20 @@ These were for background icons. Not sure if I wanna use these
 
 
 
+/*About page styling*/
+#alt{
+    transform: translateX(-500px);
+    opacity: 0%;
+    animation: fadeFromLeft 1.8s ease-in-out forwards;
+}
+
+#aboutImage{
+    opacity: 0%;
+    transform: translateX(400px);
+    animation: fadeFromRight 1.5s ease-in-out 0.5s forwards;
+}
+
+
 
 
 /*Animations added to hero text*/
@@ -380,6 +394,10 @@ These were for background icons. Not sure if I wanna use these
     transform: translateY(100px);
 }
 
+.invisible_down{
+    opacity: 0%;
+    transform: translateY(100px)!important;
+}
 
 
 
@@ -430,6 +448,12 @@ These were for background icons. Not sure if I wanna use these
 }
 
 
+@media (max-width: 1200px){
+    #alt{
+        display: none!important;
+    }
+}
+
 @media(max-width: 992px){
     .home-component{
         width: 80%;
@@ -437,7 +461,7 @@ These were for background icons. Not sure if I wanna use these
     }
 
     .showing2{
-        display: flex;
+        display: flex!important;
     }
 
     .showing{
