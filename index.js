@@ -12,7 +12,13 @@ app.get("/", (req, res) => {
     res.render("home.ejs")
 })
 
+app.get("/about", (req, res) => {
+    res.render("about.ejs")
+})
 
+app.get("/pricing", (req, res) => {
+    res.render("pricing.ejs")
+})
 
 
 app.listen(port, () => {

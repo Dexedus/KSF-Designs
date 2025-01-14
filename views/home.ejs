@@ -1,32 +1,31 @@
 <%- include("partials/header.ejs")  %>
-<div id="filler"></div>
+<section id="gradient">
 
-
-    
+<!--Hero Section-->    
 <div class="px-4 py-5 text-center home-component">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi quote bi-quote" viewBox="0 0 16 16" id="quoteOne">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi quote bi-quote" viewBox="0 0 16 16" id="quoteOne" style="color: #808080;">
       <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
     </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi quote bi-quote" viewBox="0 0 16 16" id="quoteTwo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi quote bi-quote" viewBox="0 0 16 16" id="quoteTwo" style="color: #808080;">
         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
       </svg>
     <img class="d-block mx-auto mb-4" src="images/ME.PNG" id="home-card-image" alt="" width="130" height="130" style="border-radius: 50%;">
     <h1 class="display-5 fw-bold text-white" id="home-title">Small Business Developer</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4 text-white">I work primarily with small businesses to help them grow their leads and build a strong online presence, which has become a crucial aspect of success in today’s digital-driven market.</p>
+      <h6 class="lead mb-4 text-white" style="display: flex; font-size: 1em; flex-wrap: wrap; justify-content: center;"><p id="I-work">I work</p> <p id="primarily">primarily</p> <p id="with-small">with small</p> <p id="businesses">businesses</p> <p id="to-help">to help</p> <p id="them-grow">them grow</p> <p id="their-leads">their leads</p> <p id="and-build">and build</p> <p id="a-strong">a strong</p> <p id="online">online</p> <p id="presence">presence,</p> <p id="which-has">which has</p> <p id="become">become</p> <p id="a-crucial">a crucial</p> <p id="aspect">aspect</p> <p id="of-success">of success</p> <p id="in-todays">in today’s</p> <p id="digital-driven">digital-driven</p> <p id="market">market.</p></h6>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
         <button type="button" class="btn btn-light btn-lg px-4 gap-3">Get Started</button>
-        <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+        <button type="button" class="btn btn-outline-light btn-lg px-4">About Me</button>
       </div>
     </div>
   </div>
 
-  
-  <div class="container px-4 py-5" id="custom-cards">
+  <!--Recent Projects-->
+  <!-- <div class="container px-4 py-5" id="custom-cards">
     <h2 class="mb-0" style="color: white; text-align: center;">Recent Projects</h2>
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 flex justify-content-center">
-      <a href="https://book-review-app-6hdz.onrender.com/" class="project-card-links">
+      <a href="https://www.thelcbiologyguy.ie/" class="project-card-links">
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/images/thelcbioguy.PNG');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -40,7 +39,6 @@
         </div>
       </div>
       </a>
-
 
       <a href="https://book-review-app-6hdz.onrender.com/" class="project-card-links">
       <div class="col">
@@ -57,8 +55,123 @@
       </div>
       </a>
     </div>
+  </div> -->
+
+  <div class="container col-xxl-8 px-4 py-5" style="position: relative;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" id="award" viewBox="0 0 16 16">
+      <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+      <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+    </svg>
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/images/thelcbioguy.PNG" id="observedImageRight" class="d-block mx-lg-auto img-fluid project-images-home box" alt="Client Project" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6 box" id="observedTextLeft">
+        <h1 class="display-5 fw-bold text-white lh-1 mb-3 ps-2">Latest Client Project</h1>
+        <p class="lead text-white p-2 project-paragraphs scrollable-box" style="max-height: 200px; overflow-y: auto;">Max is the founder of TheLCBiologyGuy. A biology grinds school specifically aimed at students taking the leaving certificate biology exam in Ireland. He came to me after hearing about my other work in web development via my social media. He asked if I could make him a website that would allow customers to purchase a placement for a zoom class. Also, he wanted each customer to automatically recieve an email with the link to the zoom class so they could join it at the stated time and date.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Learn More</button>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <div class="container col-xxl-8 px-4 py-5 mb-5" style="position: relative;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" id="code" viewBox="0 0 16 16">
+      <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+    </svg>
+    <div class="row flex-lg-row align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="/images/bookstore.PNG" id="observedImageLeft" class="d-block mx-lg-auto img-fluid project-images-home box" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6 box" id="observedTextRight">
+        <h1 class="display-5 fw-bold text-white lh-1 mb-3 ps-2">Latest Personal Project</h1>
+        <p class="lead text-white p-2 project-paragraphs">This is my book review app where users can read, post update and delete book reviews. I used Openlibrary's APIs to fetch book covers automatically based on the title of the book the user inputs. This application uses PostgreSQL so posts will persist between sessions. I used express.js to write the server side code and used axios to handle API requests.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!--Feature Benefits-->
+  <div style="background-color: #272727; width: 100%; border-block: solid, 2px, #2f6d23" id="featuresTab">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 text-white text-center" style="font-size: 4em;">Benefits with KSF</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col text-center box" id="observedFeature1">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3 p-1" style="border-radius: 20%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-euro" viewBox="0 0 16 16">
+              <path d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936q-.002-.165.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.6 6.6 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z"/>
+            </svg>
+          </div>
+          <h3 class="fs-2 text-white">Affordable</h3>
+          <p class="text-white">I offer a pricing plan that is ideal for smaller or newer businesses starting at €200 a month with <strong>NO</strong> initial start-up fee!</p>
+        </div>
+        <div class="feature col text-center box"  id="observedFeature2">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3 p-1" style="border-radius: 20%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+              <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+            </svg>
+          </div>
+          <h3 class="fs-2 text-white">Fully Responsive</h3>
+          <p class="text-white">Just like this website, you're website will be fully responsive meaning it will adapt to all screen sizes be it mobile, tablet, laptop or monitors</p>
+        </div>
+        <div class="feature col text-center box"  id="observedFeature3">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-white fs-2 mb-3 p-1"  style="border-radius: 20%;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tablet" viewBox="0 0 16 16">
+              <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+          </div>
+          <h3 class="fs-2 text-white">Optimised Loading</h3>
+          <p class="text-white">I code everything from scratch meaning I can optimise websites to load in 1 second or less. You simply cannot achieve the same performance with website builders</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+
+
+
+<section style="background-color: #444444; width: 100vw; height: 100%;" class="pt-5">
+
+  <div class="container py-4 mt-5 mb-5" style="position: relative; z-index: 2;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="tag" class="bi bi-tag" viewBox="0 0 16 16">
+      <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0"/>
+      <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z"/>
+    </svg>
+
+    <div class="p-5 mb-4 text-white rounded-3" style="border: solid #2f6d23!important; background-color: #0e0e0e70">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Pricing</h1>
+        <p class="col-md-8 fs-4">The last thing a new or small business wants is to spend a fortune on a website. My plan is designed with this in mind, while still being reasonable for my efforts.</p>
+        <button class="btn btn-light btn-lg" type="button">Price Plan</button>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6 my-3">
+        <div class="h-100 p-5 text-white rounded-3" style="border: solid #2f6d23!important; background-color: #0e0e0e70">
+          <h2>Services</h2>
+          <p>I offer a website package with two seperate add ons also available to you. These are the <a href="/seo">SEO package</a> and the <a href="/branding">branding package</a>. I plan to expand my range of services in the future.</p>
+          <button class="btn btn-outline-light" type="button">Future Services</button>
+        </div>
+      </div>
+      <div class="col-md-6 my-3">
+        <div class="h-100 p-5 text-white border rounded-3" style="border: solid #2f6d23!important; background-color: #0e0e0e70">
+          <h2>About Me</h2>
+          <p>Before we get started, you might want to know a little bit about me. Click the button below to learn how and why I broke into this industry after previously working in construction.</p>
+          <button class="btn btn-outline-secondary" type="button">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
 
 
 <%- include("partials/footer.ejs")  %>
