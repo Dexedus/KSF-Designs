@@ -425,6 +425,9 @@ These were for background icons. Not sure if I wanna use these
     animation: fadeFromBottom 1s ease-in-out 1s forwards;
 }
 
+.showing2{
+    display: none;
+}
 
 
 @media(max-width: 992px){
@@ -432,6 +435,15 @@ These were for background icons. Not sure if I wanna use these
         width: 80%;
         margin-top: 150px;
     }
+
+    .showing2{
+        display: flex;
+    }
+
+    .showing{
+        display: none!important;
+    }
+
 }
 
 @media(max-width: 768px){
