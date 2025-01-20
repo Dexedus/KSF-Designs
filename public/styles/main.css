@@ -82,7 +82,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, #272727, #27272796, #27272780, #2727273a, #27272762)!important;
+    background: linear-gradient(180deg, #272727, #27272796, #2727275b, #2727272a, #27272700)!important;
     width: 100%;
     height: 100%;
 }
@@ -143,8 +143,9 @@ main{
   }
   
   .scrollable-box::-webkit-scrollbar-track {
-    background-color: #9c9c9c;  /* Track (the background of the scrollbar) */
+    background-color: #1e2e1a;  /* Track (the background of the scrollbar) */
     border-radius: 10px;
+    display: none;
   }
   
   .scrollable-box::-webkit-scrollbar-thumb {
@@ -188,7 +189,7 @@ These were for background icons. Not sure if I wanna use these
     height: 300px;
     width: 300px;
     color: rgb(230, 230, 230);
-    z-index: -1;
+    z-index: 1;
 }
 
 
@@ -228,6 +229,14 @@ These were for background icons. Not sure if I wanna use these
     border-radius: 50px;
     border: 2px solid #2f6d23;
 
+}
+
+.contactComponent{
+    position: relative!important;
+    margin-block: 100px;
+    background-color: #0e0e0e70!important;
+    border-radius: 50px;
+    border: 2px solid #2f6d23;
 }
 
 
@@ -487,6 +496,10 @@ These were for background icons. Not sure if I wanna use these
         right: 70px;
         height: 100px;
         width: 100px;
+    }
+
+    #pricingHero{
+        margin-top: 100px;
     }
 
 }

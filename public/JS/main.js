@@ -1,4 +1,4 @@
-// Define a function to handle when an element comes into view
+// Function to handle when an element comes into view
 const handleIntersection = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -31,7 +31,7 @@ const handleIntersection = (entries, observer) => {
         }
 
   
-        // Optionally, stop observing the element once it's in view
+        // Stop observing the element once it's in view
         observer.unobserve(entry.target);
       }
     });
