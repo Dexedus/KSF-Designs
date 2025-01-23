@@ -1,14 +1,19 @@
 <%- include("partials/header.ejs")  %>
 
-<div class="container">
+<div class="container" style="position: relative;">
     <div class="col-xl-12 col-xxl-8 px-4 py-5 contactComponent" style="width: 100%;">
 
-        <div class="my-5">
+      <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" fill="currentColor" class="bi bi-arrow-clockwise" style="position: absolute; color: white; top: 32%; left: 45%; transform: rotateX(180deg);" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+        <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"/>
+      </svg>
+
+        <div class="my-1">
             <div class="p-5 text-center">
-              <div class="container py-1">
+              <div class="container">
                 <h1 class="display-4 fw-bold lh-1 text-white">Contact Information</h1>
                 <p class="col-lg-8 mx-auto text-white lead">
-                  This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
+                  Feel free to email me at <i>ksfwebdesign@gmail.com</i> alternatively you can use the submission form below and I will get back to you as soon as possible.
                 </p>
               </div>
             </div>
@@ -16,20 +21,24 @@
 
         <div class="row align-items-center g-lg-5 py-5">
           <div class="col-lg-7 text-center text-lg-start">
-            <h1 class="display-4 fw-bold lh-1 text-white mb-3">Get In Touch Today!</h1>
-            <p class="col-lg-10 fs-4 text-white">To get in touch, simply enter you're email address and phone number. I will email you back as soon as possible so that we can arrange a call to discuss your plan.</p>
+            <h1 class="display-4 fw-bold lh-1 text-white mb-3">Have A Query?</h1>
+            <p class="col-lg-10 fs-4 text-white">Simply enter you're email address (Phone number optional). I will email you back and we can discuss whatever query you have.</p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="/submitQuery">
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address (Required)</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
+                <input type="tel" name="number" class="form-control" id="floatingPassword" placeholder="Number">
+                <label for="floatingPassword">Phone Number (Optional)</label>
               </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+              <div class="form-floating mb-3">
+                <input type="text" name="message" class="form-control" id="floatingMessage" placeholder="Message" required>
+                <label for="floatingPassword">What is your query?</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-dark" type="submit">Submit</button>
               <hr class="my-4">
             </form>
           </div>

@@ -240,6 +240,35 @@ These were for background icons. Not sure if I wanna use these
 }
 
 
+/*Web Design Page Styling*/
+#bigPic{
+    transform: translateY(20px);
+    animation: upAndDown 10s ease-in-out infinite;
+}
+
+#mobileScreen{
+    display: none;
+}
+
+#feature1, #feature2, #feature3{
+    opacity: 0;
+}
+
+
+.fadeFromLeftOne{
+    transform: translateX(-200px);
+    animation: fadeFromLeft 1s ease-in-out 0.5s forwards;
+}
+
+.fadeFromLeftTwo{
+    transform: translateX(-200px);
+    animation: fadeFromLeft 1s ease-in-out 0.5s forwards;
+}
+
+.fadeFromLeftThree{
+    transform: translateX(-200px);
+    animation: fadeFromLeft 1s ease-in-out 0.5s forwards;
+}
 
 
 /*Animations added to hero text*/
@@ -502,6 +531,21 @@ These were for background icons. Not sure if I wanna use these
         margin-top: 100px;
     }
 
+    #WebDesignRow{
+        margin-inline: 15px;
+    }
+
+    #bigScreen{
+        display: none;
+    }
+
+    #mobileScreen{
+        display: block;
+    }
+
+    #WebDesignImagesContainer{
+        display: none;
+    }
 }
 
 @media(max-width: 768px){
@@ -523,6 +567,11 @@ These were for background icons. Not sure if I wanna use these
     #LogoImage{
         height: 60px;
     }
+
+    #WebDesignRow{
+        margin-top: -200px;
+    }
+
 }
 
 
@@ -572,5 +621,19 @@ These were for background icons. Not sure if I wanna use these
     100% {
         transform: scale(1);
         opacity: 100%;
+    }
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }

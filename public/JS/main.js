@@ -26,8 +26,12 @@ const handleIntersection = (entries, observer) => {
           entry.target.classList.add('fadeFromBottom2');
         }else if (id === 'aboutMeP3') {
           entry.target.classList.add('fadeFromBottom3');
-        }else if (id === 'element3') {
-          entry.target.classList.add('in-view-3');
+        }else if (id === 'feature1') {
+          entry.target.classList.add('fadeFromLeftOne');
+        }else if (id === 'feature2') {
+          entry.target.classList.add('fadeFromLeftTwo');
+        }else if (id === 'feature3') {
+          entry.target.classList.add('fadeFromLeftThree');
         }
 
   

@@ -94,6 +94,39 @@ app.post("/submitContact", (req, res) => {
     sendEmail("ksfwebdesigns@gmail.com", "New Customer Query", `New Customer<br>Email: ${email}<br>Phone Number: ${number}`)
 })
 
+
+// Contact Form Submission Handling
+app.post("/submitQuery", (req, res) => {
+
+    //Re-render the page
+    res.render("contact.ejs");
+
+    //Get the input values
+    const email = req.body.email;
+    const number = req.body.number || "No Number";
+    const query = req.body.message
+
+    //Send the email to my business account.
+    sendEmail("ksfwebdesigns@gmail.com", "New Customer Query", `New Customer<br>Email: ${email}<br>Phone Number: ${number}<br>Message: ${query}`)
+})
+
+
+// Contact Form Submission Handling
+app.post("/submitWebDesign", (req, res) => {
+
+    //Re-render the page
+    res.render("pricing.ejs");
+
+    //Get the input values
+    const email = req.body.email;
+    const number = req.body.number;
+
+    //Send the email to my business account.
+    sendEmail("ksfwebdesigns@gmail.com", "New Customer Query", `New Customer<br>Email: ${email}<br>Phone Number: ${number}`)
+})
+
+
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
   });
