@@ -71,7 +71,7 @@ app.get("/fullPackage", (req, res) => {
         feature1Info: "Only start paying from the date the website goes live.",
         feature2Info: "Give your website a boost on Google rankings. Continued maintenance of SEO is an optional paid add-on.",
         feature3Info: "Never worry about maintenance, hosting or third party costs.",
-        postAddress: "'/submitFullPackage'"
+        postAddress: "/submitFullPackage"
     })
 })
 
@@ -87,7 +87,7 @@ app.get("/webDesign", (req, res) => {
         feature1Info: "Complex features with up to 5 pages. Bring your customers to your digital reception.",
         feature2Info: "Allow customers to book and pay through your fast loading, stylish website.",
         feature3Info: "Hosting and maintencance is covered for the first year.",
-        postAddress: "'/submitWebDesign'"
+        postAddress: "/submitWebDesignProduct"
     })
 })
 
@@ -103,7 +103,7 @@ app.get("/staticWebsite", (req, res) => {
         feature1Info: "First draft done in 5 days or less. If you're happy with it, we launch it right away. Additional drafts are free.",
         feature2Info: "Include photos or videos of your work to accompany the other static info your site may have.",
         feature3Info: "Because your site is not hosted on a backend server, updates to your site push immediately.",
-        postAddress: "'/submitStaticWebsite'"
+        postAddress: "/submitStaticWebsite"
     })
 })
 
@@ -168,7 +168,7 @@ app.post("/submitFullPackage", (req, res) => {
     const email = req.body.email;
     const number = req.body.number;
 
-    sendEmail(email, "Thank you for contacting us", "Hello there,<br><br>This is an automated response email.<br>Thanks for showing interest in our Web Design Full Package.<br>I will get back to you as soon as possible. with information on how to move forward. In the meantime, it would be great if you could reply to this email with answers to the following questions. Thanks!<br><br><b>Question 1</b><br>What's your name, or the name of the person I will primarily be in communication with?<br><br><b>Question 2</b><br>What services do you provide at your business? (The more details you can provide the better)<br><br>If you don't reply with answers to these questions, I will still reach out as soon as possible, so don't worry if you don't want to answer right now.<br><br>Thanks for choosing KSF.<br><br>Regards,<br>KSF Web-Design")
+    sendEmail(email, "Thank you for contacting us", "Hello there,<br><br>This is an automated response email.<br>Thanks for showing interest in our Web Design Full Package.<br>I will get back to you as soon as possible with information on how to move forward. In the meantime, it would be great if you could reply to this email with answers to the following questions. Thanks!<br><br><b>Question 1</b><br>What's your name, or the name of the person I will primarily be in communication with?<br><br><b>Question 2</b><br>What services do you provide at your business? (The more details you can provide the better)<br><br>If you don't reply with answers to these questions, I will still reach out as soon as possible, so don't worry if you don't want to answer right now.<br><br>Thanks for choosing KSF.<br><br>Regards,<br>KSF Web-Design")
 
 
     //Send the email to my business account.
@@ -177,7 +177,7 @@ app.post("/submitFullPackage", (req, res) => {
 
 
 // Contact Form for web design
-app.post("/submitWebDesign", (req, res) => {
+app.post("/submitWebDesignProduct", (req, res) => {
 
     //Re-render the page
     res.redirect("/webDesign");
