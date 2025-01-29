@@ -1,0 +1,71 @@
+<%- include("partials/header.ejs")  %>
+
+<section class="gradient">
+
+<div class="px-2 pb-5 pt-3 my-5 text-center text-white container">
+    <h1 class="display-4 fw-bold text-white"> <%= title %> </h1>
+    <div class="col-lg-8 mx-auto">
+      <p class="lead mb-4 mx-2"><%= summary %></p>
+    </div>
+    <div>
+      <div class=" px-5" style="position: relative; display: flex; justify-content: center;">
+        <img src="/images/laptop.png" alt="Example image" style="min-width: 250px;" width="50%" loading="lazy">
+        <img src="/images/Phone.png" style="position: absolute;min-width: 130px; transform: translate(70%, 70%)!important;" alt="Example image" width="25%" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <h2 class="card-title pricing-card-title text-white" style="font-size: 3em;"><%= price %><small class="text-white fw-light"><%= mo %></small></h2>
+  <div class="container px-4 py-5 d-flex justify-content-center" id="featured-3">
+    <div class="row g-4 pb-5 row-cols-1 row-cols-lg-3 text-center text-white d-flex justify-content-center">
+      <div class="feature col card-component">
+        <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+        </div> -->
+        <h3 class="fs-2 text-white"><%= feature1Title %></h3>
+        <p><%= feature1Info %></p>
+      </div>
+      <div class="feature col card-component">
+        <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+        </div> -->
+        <h3 class="fs-2 text-white"><%= feature2Title %></h3>
+        <p><%= feature2Info %></p>
+      </div>
+      <div class="feature col card-component">
+        <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div> -->
+        <h3 class="fs-2 text-white"><%= feature3Title %></h3>
+        <p><%= feature3Info %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center">
+    <div class="col-xl-12 col-xxl-8 px-4 py-2 contactComponent" style="width: 92.5%; margin-block: 30px; border-radius: 20px;">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-white mb-3 new-rocker-regular">Get In Touch Today!</h1>
+            <p class="col-lg-10 fs-4 text-white">To get in touch, simply enter you're email address and phone number. I will email you back as soon as possible so that we can arrange a call to discuss your plan.</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="/submitContact">
+              <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="tel" name="number" class="form-control" id="floatingNumber" placeholder="Phone Number" required>
+                <label for="floatingNumber">Phone Number</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-dark" type="submit">Submit</button>
+              <hr class="my-4">
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  </section>
+<%- include("partials/footer.ejs")  %>
