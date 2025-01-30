@@ -1,2 +1,23 @@
 <%- include("partials/header.ejs")  %>
+
+<div class="container col-xxl-8 px-4 py-5" style="position: relative;">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-12 col-sm-12 col-lg-6" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <img src="/images/bookstore.PNG" id="observedImageRight" class="d-block mx-lg-auto img-fluid project-images-home box" alt="Client Project" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6 box" id="observedTextLeft">
+        <div class="text-white p-2 project-paragraphs">
+          <h1 class="display-5 fw-bold text-white lh-1 mb-3 ps-2 new-rocker-regular">Welcome To Bookstored</h1>
+          <p class="lead">Below, I outline how I went about creating the backend features that power this app.</p>
+          <h3 class="new-rocker-regular">Log In / Sign Up</h3>
+          <p class="lead">This app will ask you to log in or sign up by creating an account with a username (your email address) and a password. These passwords are now hashed and salted for additional security. I use express session to create a session cookie when the user logs in. this session expires after 24 hours meaning the user won't be asked to log in again until after 24 hours has passed. I also use passport's local strategy to verify authetication of users.</p>
+          <h3 class="new-rocker-regular">Updating / Deleting Posts</h3>
+          <p class="lead">Users can update and delete posts that they have created, but cannot update and delete the posts made by other users. I use passport to serialize and deserialize the user info so the code can check if the user ID is associated with the post ID via postgreSQL.</p>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        </div>
+      </div>
+    </div>
+  </div>
+
 <%- include("partials/footer.ejs")  %>
