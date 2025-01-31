@@ -11,6 +11,26 @@
     font-style: normal;
 }
 
+.germania-one-regular {
+    font-family: "Germania One", serif!important;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.aoboshi-one-regular {
+    font-family: "Aoboshi One", serif!important;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+.faculty-glyphic-regular {
+    font-family: "Faculty Glyphic", serif!important;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
 .roboto-flex-font {
     font-family: "Roboto Flex", serif!important;
     font-optical-sizing: auto;
@@ -161,6 +181,13 @@ main{
     color: rgba(255, 255, 255, 0.226);
     transform: rotateX(180deg);
     transform: rotateZ(180deg);
+}
+
+.hoverEffect{
+    transition: transform 0.4s ease;
+}
+.hoverEffect:hover{
+    transform: scale(1.05)!important;
 }
 
 .project-card-links{
@@ -336,125 +363,135 @@ These were for background icons. Not sure if I wanna use these
     width: 330px!important;
 }
 
+.divider{
+    width: 100%;
+    background-color: #2f6d23;
+    height: 5px;
+}
+
+#phone{
+    animation: upAndDown 10s ease-in-out infinite;
+}
+
 
 /*Animations added to hero text*/
 #I-work{
     opacity: 0%;
     animation: heroText 1s ease-in-out 0.6s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #primarily{
     opacity: 0%;
     animation: heroText 1s ease-in-out 0.8s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #with-small{
     opacity: 0%;
     animation: heroText 1s ease-in-out 1s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #businesses{
     opacity: 0%;
     animation: heroText 1s ease-in-out 1.2s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #to-help{
     opacity: 0%;
     animation: heroText 1s ease-in-out 1.4s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #them-grow{
     opacity: 0%;
     animation: heroText 1s ease-in-out 1.6s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #their-leads{
     opacity: 0%;
     animation: heroText 1s ease-in-out 1.8s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #and-build{
     opacity: 0%;
     animation: heroText 1s ease-in-out 2s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #a-strong{
     opacity: 0%;
     animation: heroText 1s ease-in-out 2.2s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #online{
     opacity: 0%;
     animation: heroText 1s ease-in-out 2.4s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #presence{
     opacity: 0%;
     animation: heroText 1s ease-in-out 2.6s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #which-has{
     opacity: 0%;
     animation: heroText 1s ease-in-out 2.8s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #become{
     opacity: 0%;
     animation: heroText 1s ease-in-out 3s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #a-crucial{
     opacity: 0%;
     animation: heroText 1s ease-in-out 3.2s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #aspect{
     opacity: 0%;
     animation: heroText 1s ease-in-out 3.4s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #of-success{
     opacity: 0%;
     animation: heroText 1s ease-in-out 3.6s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #in-todays{
     opacity: 0%;
     animation: heroText 1s ease-in-out 3.8s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 10px;
     margin-bottom: 5px;
 }
@@ -462,14 +499,13 @@ These were for background icons. Not sure if I wanna use these
     opacity: 0%;
     animation: heroText 1s ease-in-out 4s forwards;
     transform: scale(0);
-    margin-right: 10px;
+    margin-right: 7px;
     margin-bottom: 5px;
 }
 #market{
     opacity: 0%;
     animation: heroText 1s ease-in-out 4.2s forwards;
     transform: scale(0);
-    margin-right: 10px;
     margin-bottom: 5px;
 }
 
@@ -587,6 +623,10 @@ These were for background icons. Not sure if I wanna use these
         margin-top: 100px;
     }
 
+    #phone{
+        left: 60%!important;
+    }
+
     .showing2{
         display: flex!important;
         margin-block: -100px!important;
@@ -637,6 +677,13 @@ These were for background icons. Not sure if I wanna use these
         height: 80px;
     }
 
+    #phone{
+        left: 60%!important;
+        top: 40%!important;
+        width: 200px!important;
+
+    }
+
 }
 
 @media (max-width: 576px){
@@ -648,6 +695,12 @@ These were for background icons. Not sure if I wanna use these
         margin-top: -200px;
     }
 
+    #phone{
+        left: 60%!important;
+        top: 40%!important;
+        width: 150px!important;
+
+    }
 }
 
 

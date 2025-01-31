@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Important Values
 const API_KEY = process.env.SEND_GRID_KEY
 const SendgridSender = process.env.EMAIL
+const ReplyTo = process.env.REPLYTOEMAIL
 
 
 // Send Grid Email Function
@@ -22,6 +23,7 @@ const sendEmail = async (toEmail, subject, message) => {
     const msg = {
       to: toEmail,
       from: `${SendgridSender}`, // Verified SendGrid sender email
+      replyTo: `${ReplyTo}`,  // Replies will go here
       subject: subject,
       html: message,
     };
@@ -78,7 +80,7 @@ app.get("/fullPackage", (req, res) => {
 app.get("/webDesign", (req, res) => {
     res.render("product.ejs", {
         title: "Web Design",
-        summary: "This is best for businesses who might want to have more complex features on their website. With a backend server, I can use API's to make your website do some pretty cool things. Maybe you want to handle client bookings and send them automated emails? It's all possible with this plan. Please note, hosting and maintenance are free for the first year. After this, I charge hourly for maintenance and 20/mo for hosting.",
+        summary: "This is best for businesses who might want to have more complex features on their website. With a backend server, I can use API's to make your website do some pretty cool things. Maybe you want to handle client bookings and send them automated emails? It's all possible with this plan. Please note, hosting and maintenance are free for the first year. After this, I charge hourly for maintenance and €20/mo for hosting.",
         price: "€325",
         mo: "",
         feature1Title: "Your Business Online",

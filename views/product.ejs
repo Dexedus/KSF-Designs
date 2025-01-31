@@ -2,41 +2,50 @@
 
 <section class="gradient">
 
-<div class="px-2 pb-5 pt-3 my-5 text-center text-white container">
-    <h1 class="display-4 fw-bold text-white"> <%= title %> </h1>
+<div class="px-2 pb-5 mt-5 pt-3 text-center text-white container">
+    <h1 class="display-4 fw-bold text-white new-rocker-regular"> <%= title %> </h1>
     <div class="col-lg-8 mx-auto">
       <p class="lead mb-4 mx-2"><%= summary %></p>
     </div>
-    <div>
-      <div class=" px-5" style="position: relative; display: flex; justify-content: center;">
-        <img src="/images/laptop.png" alt="Example image" style="min-width: 250px;" width="50%" loading="lazy">
-        <img src="/images/Phone.png" style="position: absolute;min-width: 130px; transform: translate(70%, 70%)!important;" alt="Example image" width="25%" loading="lazy">
-      </div>
-    </div>
-  </div>
+</div>
 
-  <h2 class="card-title pricing-card-title text-white" style="font-size: 3em;"><%= price %><small class="text-white fw-light"><%= mo %></small></h2>
+<div class="container mb-5">
+  <div class="divider" style="margin-bottom: -100px;"></div>
+  <div class="p-5 text-center rounded-3 mt-5">
+      <div style="position: relative; display: flex; justify-content: center;">
+          <img src="/images/laptop.png" alt="Laptop" style="min-width: 250px; position: relative; z-index: 1;" loading="lazy">
+          <img src="/images/phone.png" id="phone" alt="Phone" style="position: absolute; width: 250px; top: 43%; left: 55%; transform: translate(-50%, -50%); z-index: 2;" loading="lazy">
+      </div>
+      <h1 class="text-white new-rocker-regular">Fully Responsive</h1>
+      <p class="col-lg-8 mx-auto fs-5 text-white">
+          Your website will adapt seamlessly to any screen dimension from mobile to monitors.
+      </p>
+  </div>
+  <div class="divider"></div>
+</div>
+
+  <h2 class="card-title pricing-card-title text-white mt-5" style="font-size: 3em;"><%= price %><small class="text-white fw-light"><%= mo %></small></h2>
   <div class="container px-4 py-5 d-flex justify-content-center" id="featured-3">
     <div class="row g-4 pb-5 row-cols-1 row-cols-lg-3 text-center text-white d-flex justify-content-center">
-      <div class="feature col card-component">
+      <div class="feature col card-component pt-3">
         <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
         </div> -->
-        <h3 class="fs-2 text-white"><%= feature1Title %></h3>
+        <h3 class="fs-2 text-white new-rocker-regular" style="text-decoration: underline; text-decoration-color: #2f6d23;"><%= feature1Title %></h3>
         <p><%= feature1Info %></p>
       </div>
-      <div class="feature col card-component">
+      <div class="feature col card-component pt-3">
         <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
         </div> -->
-        <h3 class="fs-2 text-white"><%= feature2Title %></h3>
+        <h3 class="fs-2 text-white new-rocker-regular" style="text-decoration: underline; text-decoration-color: #2f6d23;"><%= feature2Title %></h3>
         <p><%= feature2Info %></p>
       </div>
-      <div class="feature col card-component">
+      <div class="feature col card-component pt-3">
         <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
         </div> -->
-        <h3 class="fs-2 text-white"><%= feature3Title %></h3>
+        <h3 class="fs-2 text-white new-rocker-regular" style="text-decoration: underline; text-decoration-color: #2f6d23;"><%= feature3Title %></h3>
         <p><%= feature3Info %></p>
       </div>
     </div>
