@@ -43,7 +43,7 @@ const handleIntersection = (entries, observer) => {
   
   // Create the IntersectionObserver instance
   const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0.3, // You can adjust the threshold as needed
+    threshold: 0.1, // You can adjust the threshold as needed
   });
   
   // Select all the elements you want to observe
