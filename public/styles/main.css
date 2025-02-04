@@ -370,7 +370,7 @@ These were for background icons. Not sure if I wanna use these
 }
 
 #phone{
-    animation: upAndDown 10s ease-in-out infinite;
+    animation: upAndDown 10s ease-in-out infinite!important;
 }
 
 
