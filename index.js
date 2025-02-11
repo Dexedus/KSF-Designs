@@ -15,7 +15,6 @@ const API_KEY = process.env.SEND_GRID_KEY
 const SendgridSender = process.env.EMAIL
 const ReplyTo = process.env.REPLYTOEMAIL
 
-
 // Send Grid Email Function
 sgMail.setApiKey(`${API_KEY}`)
 
